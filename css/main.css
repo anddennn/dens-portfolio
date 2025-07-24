@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, ol, ul, li{
+    font-family: 'Averia_Serif_Libre_Regular', sans-serif;
+    font-size: 1rem;
+}
+
+h1{
+    font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+    font-size: 6.5rem;
+}
+
+h2{
+    font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+    font-size: 4rem;
+}
+
+h3{
+    font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+    font-size: 2.5rem;
+}
+
+h4{
+    font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.yarndings12{
+    font-family: 'Yarndings_12', sans-serif;
+    font-weight: 300;
+}
