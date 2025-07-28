@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
 
     <!-- NAV BAR -->
-    <nav>
-    <a href="index.html" aria-label="logo-for-home">
-        <img class="nav-main-logo" src="imgs\icons\logo-icon.svg" alt="Logo in the shape of a 'D'">
-    </a>
-    <div>
-        <a href="about.html">About</a>
-        <a href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing">Resume</a>
-    </div>
+<!-- 
+    for screen reader users to go to main content -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSideBar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><g fill="#000001" clip-path="url(#a)"><path d="M31.24 3.81h-1.53v24.38h1.53V3.81ZM29.71 28.19h-1.52v1.52h1.52v-1.52ZM29.71 2.28h-1.52v1.53h1.52V2.28ZM28.19 29.71H3.81v1.53h24.38v-1.53ZM25.14 20.57H6.86v1.52H5.33v3.05h1.53v-1.52h18.28v1.52h1.53v-3.05h-1.53v-1.52ZM25.14 12.95H6.86v1.52H5.33v3.05h1.53V16h18.28v1.52h1.53v-3.05h-1.53v-1.52ZM25.14 5.33H6.86v1.52H5.33V9.9h1.53V8.38h18.28V9.9h1.53V6.85h-1.53V5.33ZM25.14 25.14H6.86v1.52h18.28v-1.52ZM25.14 17.52H6.86v1.52h18.28v-1.52ZM25.14 9.9H6.86v1.53h18.28V9.9ZM28.19.76H3.81v1.52h24.38V.76ZM3.81 28.19H2.29v1.52h1.52v-1.52ZM3.81 2.28H2.29v1.53h1.52V2.28ZM2.29 3.81H.76v24.38h1.53V3.81Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg>
+    </button>
+
+    <nav id="navbar">   
+        <ul>
+            <li id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button></li>
+            <li  class="home-li">
+                <a href="index.html" aria-current="page" aria-label="home link">D.</a>
+            </li> 
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing">Resume</a></li>
+        </ul>
     </nav>
 
+    <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    <section id="main-content">
     <section id="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -75,7 +88,8 @@
 
         <a>You can always take another look...</a>
     </section>
-
+    </section>
+    
     <footer>
         <div>
             <p>Living and working on the ancestral lands of the Səlilwətaɬ (Tsleil-Waututh), kʷikʷəƛ̓əm(Kwikwetlem), Stz’uminus, xʷməθkʷəy̓əm (Musqueam), Qayqayt, and S’ólh Téméxw (Stó:lō) Nations.</p>
@@ -84,6 +98,7 @@
                 <p>Made through mystical forces</p>               
             </div>
         </div>
+    
         <div>
             <a href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
                 <img src="imgs\icons\resume-icon.svg" alt="pixel icon of a document with a folded corner">

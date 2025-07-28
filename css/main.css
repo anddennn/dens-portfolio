@@ -1,7 +1,23 @@
+
+:root{
+    --white: #FFFAFA;
+    --black: #121214;
+    --red:  #FF0000;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("../imgs/pattern-home.png");
+    background-size: 5rem;
+    background-repeat: repeat;
+    background-position: right top;
 }
 
 p, ol, ul, li{
@@ -33,3 +49,165 @@ h4{
     font-family: 'Yarndings_12', sans-serif;
     font-weight: 300;
 }
+
+/*---------------------------------------------------------------*/
+
+
+/* Nav bar reference in HTML, css and js is from this video:
+https://www.youtube.com/watch?v=m7YDWNz65iI */
+
+.skip-link{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 150ms ease;
+}
+
+.skip-link:focus {
+    opacity: 1;
+    pointer-events: auto;
+    text-decoration: underline;
+}
+
+nav{
+    border-bottom: 0.1rem solid var(--black);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: min(13rem, 100%);
+    z-index: 1000;
+    transition: all 150ms ease-out;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .home-li{
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+nav li{
+    gap: 1rem;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--black);
+    padding: 1rem 1.5rem;
+    transition: all 150ms ease;
+}
+nav a:hover, nav a:focus{
+    color: var(--red);
+    fill: var(--red);
+}
+
+nav a.active-link{
+    border-bottom: 0.2rem solid var(--black);
+}
+
+#open-sidebar-button{
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+#close-sidebar-button{
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+#overlay{
+    background: rgb(0,0,0,0.5);
+    position: fixed;
+    inset:0;
+    z-index: 999;
+    display:none;
+}
+
+
+#main-content{
+    padding: 2rem;
+    margin-left: 13rem;
+    min-height: calc(100vh - 6.5rem);
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 48rem) {
+
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
+
+    nav{
+        background-color: var(--white);
+        position:fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: min(13rem, 100%);
+        z-index: 1000;
+        border-left: 0.1rem solid var(--black);
+        border-bottom: none;
+        transition: all 150ms ease-out;
+    }
+
+    nav.show{
+        right: 0;
+    }
+
+    nav.show ~ #overlay{
+        display: block;
+    }
+
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav a{
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    nav a.active-link{
+        border-bottom: none;
+    }
+
+    nav .home-li{  
+        margin-right: unset;
+    }
+
+    
+    #main-content{
+        margin-left: unset;
+    }
+}
+
+/*---------------------------------------------------------------*/
+
+
