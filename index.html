@@ -19,12 +19,14 @@
     <a href="#hero" class="skip-link">Skip to main content</a>
 
     <button id="open-sidebar-button" onclick="openSideBar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><g fill="#000001" clip-path="url(#a)"><path d="M31.24 3.81h-1.53v24.38h1.53V3.81ZM29.71 28.19h-1.52v1.52h1.52v-1.52ZM29.71 2.28h-1.52v1.53h1.52V2.28ZM28.19 29.71H3.81v1.53h24.38v-1.53ZM25.14 20.57H6.86v1.52H5.33v3.05h1.53v-1.52h18.28v1.52h1.53v-3.05h-1.53v-1.52ZM25.14 12.95H6.86v1.52H5.33v3.05h1.53V16h18.28v1.52h1.53v-3.05h-1.53v-1.52ZM25.14 5.33H6.86v1.52H5.33V9.9h1.53V8.38h18.28V9.9h1.53V6.85h-1.53V5.33ZM25.14 25.14H6.86v1.52h18.28v-1.52ZM25.14 17.52H6.86v1.52h18.28v-1.52ZM25.14 9.9H6.86v1.53h18.28V9.9ZM28.19.76H3.81v1.52h24.38V.76ZM3.81 28.19H2.29v1.52h1.52v-1.52ZM3.81 2.28H2.29v1.53h1.52V2.28ZM2.29 3.81H.76v24.38h1.53V3.81Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none"><path fill="snow" d="M1.653 1.653h27.693v27.693H1.653z"/><path fill="#000" d="M31 3.102h-1.557v24.795H31V3.102ZM29.442 27.896h-1.546v1.546h1.546v-1.546ZM29.442 1.546h-1.546v1.556h1.546V1.546ZM27.897 29.443H3.102v1.556h24.795v-1.556ZM24.795 20.147H6.204v1.546H4.647v3.102h1.557v-1.546h18.591v1.546h1.556v-3.102h-1.556v-1.546ZM24.795 12.398H6.204v1.545H4.647v3.102h1.557V15.5h18.591v1.546h1.556v-3.102h-1.556v-1.545ZM24.796 4.648H6.205v1.546H4.648v3.102h1.557V7.75h18.591v1.546h1.556V6.194h-1.556V4.648ZM24.796 24.795H6.204v1.546h18.592v-1.546Z"/><path fill="#000" d="M24.796 17.045H6.204v1.546h18.592v-1.546ZM24.796 9.295H6.204v1.556h18.592V9.296ZM27.897 0H3.102v1.546h24.795V0ZM3.103 27.896H1.557v1.546h1.546v-1.546ZM3.103 1.546H1.557v1.556h1.546V1.546ZM1.556 3.102H0v24.796h1.556V3.102Z"/></svg>
     </button>
 
     <nav id="navbar">   
         <ul>
-            <li id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button></li>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button>
+            </li>
             <li  class="home-li">
                 <a href="index.html" aria-current="page" aria-label="home link">D.</a>
             </li> 
@@ -36,62 +38,93 @@
     <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
 
     <section id="main-content">
-    <section id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p>Hey hey! My name is:</p>
-                <h1>Den.</h1>
-                <h2 class="yarndings12">Den</h2>
-                <p>Vancouver-based visual & interaction designer who thinks design shouldn’t be boring.</p>
-            </div>
-            <img src="imgs\icons\arrow-down.svg" alt="Pixel arrow pointing downwards">
-        </div>
-    </section>
-
-    <section id="jazzdor">
-        <div class="project-card">
-            <div class="project-card-image"></div>
-            <div class="project-card-text">
-                <div>
-                    <h3>JAZZDOR</h3>
-                    <h4 class="yarndings12">JAZZDOR</h4>
+        <section id="hero-home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>Hey hey! My name is:</p>
+                    <h1>Den.</h1>
+                    <h2 class="yarndings12">Den</h2>
+                    <p>Vancouver-based visual & interaction designer who thinks design shouldn’t be boring.</p>
                 </div>
-                <p>GET LOUD: A bold microsite branding project celebrating the energy of Jazzdor’s  experimental sound—designed in 5 weeks with custom visuals and playful interactions.
-                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="47" fill="none"><path fill="#121214" fill-opacity=".8" d="M10 10.59v8.6h8.6v-8.6zM18.6 19.19v8.6h8.6v-8.6zM35.8 27.79v-8.6h8.6v8.6zM44.4 19.19v-8.6H53v8.6zM27.2 27.79v8.6h8.6v-8.6z"/></svg>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="civic">
-        <div class="project-card">
-            <div class="project-card-image"></div>
-            <div class="project-card-text">
-                <div>
-                    <h3>C.I.V.I.C</h3>
-                    <h4 class="yarndings12">C.I.V.I.C</h4>
+        <section id="jazzdor">
+            <div class="project-card">
+                <div class="project-card-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="../imgs/home-imgs/jazzdor-cardbg.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card-media-tags">
+                        <p>Visual Design</p>
+                        <p>UI/UX Design</p>
+                        <p>Branding</p>
+                    </div>
+                    <div class="project-card-media-mockup">
+                        <img src="imgs/home-imgs/jazzdor-thumbnail-1500w.png" alt="desktop mockup of jazzdor home page">
+                    </div>
                 </div>
-                <p>In Numbers: An award-winning design jam project that explores dark potential of data-driven identity in a dystopian future through speculative design.
-                </p>
+                <div class="project-card-text">
+                    <div>
+                        <h3>JAZZDOR</h3>
+                        <h4 class="yarndings12">JAZZDOR</h4>
+                    </div>
+                    <p>GET LOUD: A bold microsite branding project celebrating the energy of Jazzdor’s  experimental sound—designed in 5 weeks with custom visuals and playful interactions.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="contact-card">
-            <h2>Let's work together!</h2>
-            <h2 class="yarndings12">uuu</h2>
-            <div>
-                <a>Send me an email</a>
-                <a>DM me on LinkedIn</a>
+        <section id="civic">
+            <div class="project-card">
+                <div class="project-card-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="../imgs/home-imgs/civic-cardbg.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card-media-tags">
+                        <p>Visual Design</p>
+                        <p>UI/UX Design</p>
+                        <p>Branding</p>
+                    </div>
+                    <div class="project-card-media-mockup">
+                        <img src="imgs/home-imgs/civic-thumbnail-1500w.png" alt="desktop mockup of jazzdor home page">
+                    </div>
+                </div>
+                <div class="project-card-text">
+                    <div>
+                        <h3>C.I.V.I.C</h3>
+                        <h4 class="yarndings12">C.I.V.I.C</h4>
+                    </div>
+                    <p>In Numbers: An award-winning design jam project that explores dark potential of data-driven identity in a dystopian future through speculative design.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <a>You can always take another look...</a>
-    </section>
+        <section id="contact">
+            <div class="contact-card">
+                <h2>Let's work together!</h2>
+                <h3 class="yarndings12">uuu</h3>
+                <div class = "contact-buttons">
+                    <a class = "contact-buttons-item" href="mailto:denishameutia@gmail.com">
+                        <p>Send me an email</p>    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"><path fill="#121214" d="M18.097 7.238v-.903h-.908v-.908h-.903V3.622h-.902v7.238h.902V9.95h.903V9.05h.908v8.14H19V7.238h-.903Z"/><path fill="#121214" d="M18.098 17.189h-.909v.908h.909v-.908ZM17.189 18.097H1.81V19h15.378v-.903ZM15.384 10.86h-.908v.902h.908v-.902ZM14.476 15.384h-.903v.902h.903v-.902ZM14.476 11.762h-.903v.903h.903v-.903ZM13.573 14.476h-.908v.908h.909v-.908Z"/><path fill="#121214" d="M13.573 12.665h-.908v.908h.909v-.908ZM13.573 6.335h-.908V9.05h.909V6.335ZM12.664 5.427h-.902v.908h.902v-.908ZM12.664 13.573H6.335v.903h6.33v-.903ZM12.664 9.049H10.86v.902h1.805V9.05ZM10.86 6.335H8.146v.903h1.805v1.81h.909V6.336ZM9.951 9.049H8.146v.902h1.805V9.05ZM11.763 4.524H7.238v.903h4.525v-.903ZM11.763 10.86H7.238v.902h4.525v-.902Z"/><path fill="#121214" d="M8.147 7.238h-.909v1.81h.909v-1.81ZM7.237 9.951h-.902v.909h.902V9.95ZM7.237 5.427h-.902v.908h.902v-.908ZM6.335 14.476h-.908v.908h.908v-.908ZM6.335 12.665h-.908v.908h.908v-.908ZM6.335 6.335h-.908v3.616h.908V6.335ZM5.427 15.384h-.903v.902h.903v-.902ZM5.427 11.762h-.903v.903h.903v-.903ZM15.384 3.622v-.909h-1.81v-.902h-.91V.903h-.902V0H7.238v.902h-.903v.909h-.908v.902H3.622v.909h11.762ZM4.524 10.86h-.902v.902h.902v-.902ZM1.811 17.189H.903v.908h.908v-.908ZM.902 9.049h.909v.902h.902v.909h.909V3.622h-.909v1.805h-.902v.908H.903v.903H0v9.951h.902v-8.14Z"/></svg>
+                    </a>
+                    <a class = "contact-buttons-item" href="https://www.linkedin.com/in/den-kinanti-9b5741284/">
+                        <p>DM me on LinkedIn</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"><g fill="#121214" clip-path="url(#a)"><path d="M15.384 10.454v1.092H13.19v1.1H6.622v1.092h3.285v1.093h1.092v1.1h1.1v1.092h4.377v1.093h1.1v1.1h1.092v1.092h1.093V15.93h1.1v-1.1h1.092v-4.377H20.86v-1.1h-1.1V8.261h-2.184V4.977h-1.1v5.477h-1.092ZM16.477 3.877h-1.093v1.1h1.093v-1.1Z"/><path d="M14.285 7.169H12.1v2.185h2.185V7.169ZM15.384 2.785H13.19v1.092h2.193V2.785ZM9.907 7.169H7.715v2.185h2.192V7.169ZM6.622 13.738h-1.1v1.093h1.1v-1.093ZM13.192 1.692H4.431v1.093h8.761V1.692Z"/><path d="M4.43 12.646H3.338v4.377H4.43v-1.092h1.093v-1.1H4.43v-2.185ZM5.523 7.169H3.338v2.185h2.185V7.169ZM4.43 2.785H2.238v1.092H4.43V2.785ZM3.338 11.546h-1.1v1.1h1.1v-1.1ZM2.238 10.454H1.146v1.092h1.092v-1.092ZM2.238 3.877H1.146v1.1h1.092v-1.1ZM1.146 4.977h-1.1v5.477h1.1V4.977Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg>
+                    </a>
+                </div>
+            </div>
+
+            <a class="non-button scroll-up" href="#hero-home"><p>You can always take another look... </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none"><path fill="#121214" d="M0 16.2v-5.4h5.4v5.4zM5.4 10.8V5.4h5.4v5.4zM16.2 5.4v5.4h5.4V5.4zM21.6 10.8v5.4H27v-5.4zM10.8 5.4V0h5.4v5.4z"/></svg></a>
+        </section>
     </section>
     
     <footer>
-        <div>
+        <div class="footer-text">
             <p>Living and working on the ancestral lands of the Səlilwətaɬ (Tsleil-Waututh), kʷikʷəƛ̓əm(Kwikwetlem), Stz’uminus, xʷməθkʷəy̓əm (Musqueam), Qayqayt, and S’ólh Téméxw (Stó:lō) Nations.</p>
             <div>
                 <p>Den Kinanti © 2025</p>
@@ -99,14 +132,14 @@
             </div>
         </div>
     
-        <div>
-            <a href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
+        <div class="footer-links">
+            <a class="non-button" href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
                 <img src="imgs\icons\resume-icon.svg" alt="pixel icon of a document with a folded corner">
             </a>
-            <a href="https://www.linkedin.com/in/den-kinanti-9b5741284/" aria-label="linkedin-link">
+            <a class="non-button" href="https://www.linkedin.com/in/den-kinanti-9b5741284/" aria-label="linkedin-link">
                 <img src="imgs\icons\linkedin-icon.svg" alt="pixel icon of the linkedin logo">
             </a>
-            <a href="mailto:denishameutia@gmail.com" aria-label="email-link">
+            <a class="non-button" href="mailto:denishameutia@gmail.com" aria-label="email-link">
                 <img src="imgs\icons\email-icon.svg" alt="pixel icon of an envelope">
             </a>
         </div>
