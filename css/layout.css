@@ -1,0 +1,185 @@
+@media (min-width: 64rem){
+    
+    p, ol, ul, li{
+        font-size: 1.3rem;
+    }
+
+    a{
+        padding: 1.5rem 2rem;
+    }
+
+    nav li {
+        font-size: 1.5rem;
+    }
+
+
+    h1{
+        font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+        font-size: 7.5rem;
+        letter-spacing: -1.4rem;
+    }
+
+    h2{
+        font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+        font-size: 5rem;
+    }
+
+    h3{
+        font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+        font-size: 3.5rem;
+    }
+
+    h4{
+        font-family: 'Averia_Serif_Libre_Bold', sans-serif;
+        font-size: 3rem;
+    }
+
+    #hero-home, #jazzdor, #civic, #contact{
+        max-width: 80rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #main-content{
+        padding: 5rem;
+    }
+
+    /* HERO SECTION */
+
+    .hero-text{
+        max-width: 40rem;
+    }
+
+    .hero-text h1{
+        font-size: 14rem;
+        margin: -1.5rem 0;
+    }
+
+    .hero-text h2{
+        margin-bottom: 1rem;
+    }
+
+    .hero-text p{
+        font-size: 2.3rem;
+    }
+
+
+    /* CONTENT CARDS / PROJECT SECTION */
+
+
+
+    .project-card-media-mockup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        width: 100%;
+        max-height: 60vh;
+        z-index: 2;
+        bottom: 2rem;
+    }
+
+
+    #civic .project-card-media-mockup{
+        bottom: 2rem;
+        right: -2rem;
+    }
+
+    #civic .project-card-media img {
+        width: 70%;
+    }
+
+    .project-card-media img {
+        width: 65%;
+        object-fit: contain;
+    }
+
+
+    .project-card-media-tags p{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .project-card-text{
+        margin-top: 2rem;
+        flex-direction: row;
+        max-width: 80%;
+        gap: 4rem;
+    }
+    .project-card-text h3{
+        letter-spacing: -0.5rem;
+        font-size: 4.3rem;
+    }
+
+    .project-card-text h4{
+        font-size: 2em;
+    }
+    
+    .project-card-text p{
+        padding: 1rem 0;
+    }
+
+    /* CONTACT SECTION */
+
+    #contact{
+        text-align: left;
+        margin-bottom: 15rem;
+
+        align-items: start;;
+    }
+
+    #contact h2{
+        font-size: 6rem;
+    }
+
+    #contact h3{
+        font-size: 5.5rem;
+    }
+
+    .contact-buttons{
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 3rem;
+    }
+
+    .contact-buttons-item{
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+
+    /*----------------------------------------------------------------*/
+
+    footer{
+        flex-direction: row;
+        padding: 3rem;
+        justify-content: center;
+        max-width: 99vw;
+    }
+
+    .footer-text{
+        max-width: 65rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .footer-text p{
+        font-size: 1.6rem;
+    }
+
+    .footer-links{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        gap: 1rem;
+
+        width: 50%;
+        margin-top: auto;
+    }
+
+
+
+
+}

@@ -3,7 +3,7 @@ const navbar = document.getElementById('navbar')
 
 const media = window.matchMedia('(max-width: 48rem)')
 
-media.addEventListener('change', (e)=> updateNavbar(e))
+media.addEventListener('change', (e) => updateNavbar(e))
 
 function updateNavbar(e){
     const isMobile = e.matches
@@ -19,18 +19,22 @@ function updateNavbar(e){
 function openSideBar() {
     navbar.classList.add('show')
     openButton.setAttribute('aria-expanded', 'true');
+    navbar.removeAttribute('inert')
 }
 
 function closeSideBar() {
-    navbar.classList.remove('show')
+    navbar.classList.remove('show');
+    openButton.setAttribute('aria-expanded','false')
     navbar.setAttribute('inert', '')
 }
 
 const navLinks = document.querySelectorAll('nav a')
 navLinks.forEach(link => {
-    link.addEventListener('click', ()=> {
-        closeSideBar()
-    })
-})
+    link.addEventListener('click', () => {
+        if (media.matches) {
+            closeSideBar();
+        }
+    });
+});
 
 updateNavbar(media)
