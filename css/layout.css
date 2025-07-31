@@ -179,7 +179,18 @@
         margin-top: auto;
     }
 
+}
 
-
-
+#dog {
+    width: fit-content;
+    height: fit-content;
+    cursor: auto;
+    z-index: 1002; /* Make sure it's above other content */
+}
+#dog img {
+    width: 7vw;
+    height: auto;
+    display: block;
+    pointer-events: auto;
+    user-select: none;
 }
