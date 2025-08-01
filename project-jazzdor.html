@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <!-- for screen reader users to go to main content -->
+    <a href="#jazzdor-hero" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSideBar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none"><path fill="snow" d="M1.653 1.653h27.693v27.693H1.653z"/><path fill="#000" d="M31 3.102h-1.557v24.795H31V3.102ZM29.442 27.896h-1.546v1.546h1.546v-1.546ZM29.442 1.546h-1.546v1.556h1.546V1.546ZM27.897 29.443H3.102v1.556h24.795v-1.556ZM24.795 20.147H6.204v1.546H4.647v3.102h1.557v-1.546h18.591v1.546h1.556v-3.102h-1.556v-1.546ZM24.795 12.398H6.204v1.545H4.647v3.102h1.557V15.5h18.591v1.546h1.556v-3.102h-1.556v-1.545ZM24.796 4.648H6.205v1.546H4.648v3.102h1.557V7.75h18.591v1.546h1.556V6.194h-1.556V4.648ZM24.796 24.795H6.204v1.546h18.592v-1.546Z"/><path fill="#000" d="M24.796 17.045H6.204v1.546h18.592v-1.546ZM24.796 9.295H6.204v1.556h18.592V9.296ZM27.897 0H3.102v1.546h24.795V0ZM3.103 27.896H1.557v1.546h1.546v-1.546ZM3.103 1.546H1.557v1.556h1.546V1.546ZM1.556 3.102H0v24.796h1.556V3.102Z"/></svg>
+    </button>
+
+    <nav id="navbar">   
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button>
+            </li>
+            <li class="home-li">
+                <a href="index.html" aria-current="page" aria-label="home link">D.</a>
+            </li> 
+            <li class="title-li">Index</li>
+            <li><a href="#jazzdor-summary">Summary</a></li>
+            <li><a href="#jazzdor-process">Process</a></li>
+            <li><a href="#jazzdor-finalproject">Final Project</a></li>
+            <li><a href="#jazzdor-reflection">Reflection</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    <section id="jazzdor-hero">
+            <div class="jazzdor-hero-media">
+                <video autoplay muted loop playsinline>
+                    <source src="../imgs/home-imgs/jazzdor-cardbg.mp4" type="video/mp4">
+                </video>
+                <div class="jazzdor-hero-mockup">
+                    <img src="imgs/home-imgs/jazzdor-thumbnail-1500w.png" alt="desktop mockup of jazzdor home page">
+                </div>
+            </div>
+            <div class="jazzdor-hero-content">
+                <h1>JAZZDOR</h1>
+                <a class="jazzdor-hero-button">
+                    <p>Try the protoype</p>
+                    <p class="yarndings12">\</p>
+                </a>
+            </div>
+            <img class="border" src="imgs/jazzdor-imgs/jazzdor-border.png" aria-hidden="true">
+    </section>
+    <section id="main-content">
+
+        <section id="jazzdor-summary">
+            <div class="jazzdor-summary-text">
+                <h2>GET LOUD: A Jazzdor Microsite & Branding Project</h2>
+                <p>Within 5 weeks, I was responsible for crafting the visual branding and interaction design in a team of 4 for a microsite to represent European cultural festival “Jazzdor”. The project was an attempt to highlight the festival’s expressive jazz scene with a bold art direction to match; we wanted to mirror the unpredictable and energetic nature of the music. </p>
+                <p>This project is not affiliated with Jazzdor in any way.</p>
+            </div>
+            <div class="jazzdor-summary-tags">
+                <div class="jazzdor-summary-items">
+                    <h3>Role:</h3>
+                    <p>Lead Visual Designer, Interaction Designer</p>
+                </div>
+                <div class="jazzdor-summary-items">
+                    <h3>Tools:</h3>
+                    <p>Figma, Photoshop</p>
+                </div>
+                <div class="jazzdor-summary-items">
+                    <h3>Duration:</h3>
+                    <p>5 Weeks // Spring 2025</p>
+                </div>
+            </div>
+            <img src="imgs/jazzdor-imgs/jazzdor-mockup-1.png">
+            <div class="jazzdor-context">
+                <div class="jazzdor-context-text">
+                    <img src="imgs/jazzdor-imgs/jazzdor-screenshot-1.png" alt="screenshot of original jazzdor website">
+                    <h3>The Context</h3>
+                    <p>Jazzdor is a brand that showcases the French and European Jazz scene from conventional & established to experimental & contemporary acts to willing newcomers in its flagship Strasbourg festival.</p>
+                </div>
+                <img src="imgs/jazzdor-imgs/jazzdor-screenshot-2.png" alt="monochrome picture of a band performance">
+            </div>
+        </section>
+        <section id="jazzdor-process">
+            <div class="jazzdor-mission-text">
+                <p>Our Mission:</p>
+                <h4>How might we effectively communicate Jazzdor’s ethos and needs into a platform that celebrates jazz as a collaborative, and evolving art form for diverse audiences to its fullest?</h4>
+            </div>
+            <img class="jazzdor-mission-img" src="imgs/jazzdor-imgs/jazzdor-figjam.png" alt="sticky note mind map">
+            <div class="jazzdor-concept-development">
+                <div class="jazzdor-concept-development-text">
+                    <h4>Concept Development:</h4>
+                    <p>As the lead visual designer, I drove an intensive two-week period of visual experimentation, iterating rapidly based on team feedback and critique. We explored multiple directions to define a cohesive visual language that could carry through the microsite and supporting assets.</p>
+                </div>
+                <div class="jazzdor-concept-development-media">
+                    <div class="cd-media-row">
+                        <img src="imgs/jazzdor-imgs/jazzdor-cd-1.png" alt="3 posters lined up">
+                        <img src="imgs/jazzdor-imgs/jazzdor-cd-2.png" alt="screenshot of many poster iterations">
+                    </div>
+                    <div class="cd-media-row">
+                        <img src="imgs/jazzdor-imgs/jazzdor-cd-3.png" alt="screenshot of many poster iterations">
+                        <img src="imgs/jazzdor-imgs/jazzdor-cd-4.png" alt="3 different images of design mockup products">
+                    </div>
+                </div>
+                <p>A crucial part of our project was to extrapolate design principles from precedents such as Karel Martens and Ellen Lupton into our own work. Of which we consolidated into posters and other print designs. Finally, our brand identity took shape into something we can transfer onto web. </p>
+            </div>
+
+        </section>
+        <section id="jazzdor-finalproject">
+            
+        </section>
+        <section id="jazzdor-reflection">
+            <a class="non-button scroll-up" href="#jazzdor-hero-home"><p>You can always take another look... </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none"><path fill="#121214" d="M0 16.2v-5.4h5.4v5.4zM5.4 10.8V5.4h5.4v5.4zM16.2 5.4v5.4h5.4V5.4zM21.6 10.8v5.4H27v-5.4zM10.8 5.4V0h5.4v5.4z"/></svg></a>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <p>Living and working on the ancestral lands of the Səlilwətaɬ (Tsleil-Waututh), kʷikʷəƛ̓əm(Kwikwetlem), Stz’uminus, xʷməθkʷəy̓əm (Musqueam), Qayqayt, and S’ólh Téméxw (Stó:lō) Nations.</p>
+            <div>
+                <p>Den Kinanti © 2025</p>
+                <p>Made through mystical forces</p>               
+            </div>
+        </div>
+    
+        <div class="footer-links">
+            <a class="non-button" href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
+                <img src="imgs\icons\resume-icon.svg" alt="pixel icon of a document with a folded corner">
+            </a>
+            <a class="non-button" href="https://www.linkedin.com/in/den-kinanti-9b5741284/" aria-label="linkedin-link">
+                <img src="imgs\icons\linkedin-icon.svg" alt="pixel icon of the linkedin logo">
+            </a>
+            <a class="non-button" href="mailto:denishameutia@gmail.com" aria-label="email-link">
+                <img src="imgs\icons\email-icon.svg" alt="pixel icon of an envelope">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
