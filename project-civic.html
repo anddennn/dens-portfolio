@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - C.I.V.I.C</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <!-- for screen reader users to go to main content -->
+    <a href="#civic-hero" class="skip-link">Skip to main content</a>
+
+    <button id="open-sidebar-button" onclick="openSideBar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none"><path fill="snow" d="M1.653 1.653h27.693v27.693H1.653z"/><path fill="#000" d="M31 3.102h-1.557v24.795H31V3.102ZM29.442 27.896h-1.546v1.546h1.546v-1.546ZM29.442 1.546h-1.546v1.556h1.546V1.546ZM27.897 29.443H3.102v1.556h24.795v-1.556ZM24.795 20.147H6.204v1.546H4.647v3.102h1.557v-1.546h18.591v1.546h1.556v-3.102h-1.556v-1.546ZM24.795 12.398H6.204v1.545H4.647v3.102h1.557V15.5h18.591v1.546h1.556v-3.102h-1.556v-1.545ZM24.796 4.648H6.205v1.546H4.648v3.102h1.557V7.75h18.591v1.546h1.556V6.194h-1.556V4.648ZM24.796 24.795H6.204v1.546h18.592v-1.546Z"/><path fill="#000" d="M24.796 17.045H6.204v1.546h18.592v-1.546ZM24.796 9.295H6.204v1.556h18.592V9.296ZM27.897 0H3.102v1.546h24.795V0ZM3.103 27.896H1.557v1.546h1.546v-1.546ZM3.103 1.546H1.557v1.556h1.546V1.546ZM1.556 3.102H0v24.796h1.556V3.102Z"/></svg>
+    </button>
+
+    <nav id="navbar">   
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button>
+            </li>
+            <li class="home-li">
+                <a href="index.html" aria-current="page" aria-label="home link">D.</a>
+            </li> 
+            <li class="title-li">Index</li>
+            <li><a href="#civic-summary">Summary</a></li>
+            <li><a href="#civic-process">Process</a></li>
+            <li><a href="#civic-final-project">Final Project</a></li>
+            <li><a href="#civic-reflection">Reflection</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    <section id="civic-hero">
+            <div class="hero-media">
+                <video autoplay muted loop playsinline>
+                    <source src="../imgs/home-imgs/civic-cardbg.mp4" type="video/mp4">
+                </video>
+                <div class="hero-mockup">
+                    <img src="imgs/civic-imgs/civic-thumbnail.png" alt="3 mobile mockups of the civic app in 3 colours">
+                </div>
+            </div>
+            <div class="hero-content">
+                <a class="hero-button">
+                    <p>Try the protoype</p>
+                    <p class="yarndings12">\</p>
+                </a>
+                <h1>C.I.V.I.C</h1>
+            </div>
+            <img class="border" src="imgs/civic-imgs/civic-border aria-hidden="true">
+    </section>
+
+    <section id="main-content">
+        <section id="civic-summary">
+            <div class="project-text-med">
+                <h2>“C.I.V.I.C” An award-winning Design Jam Project</h2>
+                <p>Over 10 days, our team developed C.I.V.I.C, a speculative design prototype that imagines a future where an individual’s social value is reduced to a single numerical score. As Lead UX/UI Designer, I was responsible for shaping the user experience and crafting the interface design to reflect the world’s cold, data-driven values which was then prototyped in ‘Protopie’.  </p>
+            </div>
+            <p>TThe result was a concept that won the ProtoPie sponsorship award at  SparkJam 2025.</p>
+            <hr>
+            <div class="summary-text">
+                <div class="summary-item">
+                    <h3>Role:</h3>
+                    <p>Lead UX/UI, Prototyping</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Tools:</h3>
+                    <p>Figma, Protopie</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Duration:</h3>
+                    <p>10 Days // May 2025</p>
+                </div>
+            </div>
+            <div class="side-by-side">
+                    <img src="imgs/civic-imgs/civic-mockup-1.png" alt="two phones showcasing the ID and verification page of civic">
+                    <img src="imgs/civic-imgs/civic-mockup-2.png" alt="a hand holding a phone with the civic home page">
+            </div>
+            <h3>The Context:</h3>
+            <p>
+                Set in 2035, C.I.V.I.C is a fictional government app used to verify one’s Social Standing Score, calculated from financial, social, and behavioral data. Citizens use this ID to pass checkpoints, apply for jobs, and even attend social events—illustrating how data-driven systems can reinforce inequality under the guise of objectivity.
+            </p>
+            <img src="imgs/civic-imgs/civic-banner.png" alt="abstract of the civic colors">
+        </section>
+
+        <section id="civic-process">
+            <div class="project-text-med">
+                <h3>The Process:</h3>
+
+                <h4>Concept development:</h4>
+                <p>As a team of 3 we began by brainstorming different directions we could take with this SparkJam’s theme, “Reimagining Experiences Through Time.” There were three different tracks: Past, Present and future. From the first and last track, we explored a few different ideas. None of them stuck because they lacked a ‘stance’. </p>
+            </div>
+
+            <img src="imgs/civic-imgs/civic-process-1.png" alt="3 figjam idea boards over a dark background">
+
+            <div class="side-by-side">
+                <img src="imgs/civic-imgs/civic-process-2.png" alt="collection of wireframes">
+                <img src="imgs/civic-imgs/civic-process-3.png" alt="series of propaganda posters">
+            </div>
+
+            <p class="project-text-med">Eventually, we decided on an idea that would give commentary on one of the most prevalent issues in our modern society, social comparison. Hence, C.I.V.I.C was born.</p>
+
+            <div class="project-text-med">
+                <p>Our Mission:</p>
+                <h4>How might we leverage speculative interface design as a medium to explore how people are reduced to metrics in digital and institutional systems?</h4>
+            </div>
+
+            <div class="project-text-med">
+                <h3>Inspiration:</h3>
+                <p>
+                    As the visual designer, I translated speculative themes into a   cohesive aesthetic that reflected both contemporary UI patterns and dystopian overtones. For the design I took inspiration from various sources. 
+                </p>
+            </div>
+            <div class="cd-media">
+                <div class="cd-media-row">
+                    <div class="dark-background"> 
+                        <p><strong>Social Media: </strong>
+                            The numbers matter. Does your profile truly reflect who you are? To an onlooker, it can be the only chance you get at an impression.
+                        </p>
+                        <p><strong>Credit Scores: </strong>
+                            An opaque figure that dictates your abilities related to credit, and other related financial actions.
+                        </p>
+                    </div>
+                    <img src="imgs/civic-imgs/civic-inspo-1.png" alt="collection of social media and finance app mockups">
+                </div>
+                <div class="cd-media-row">
+                    <img src="imgs/civic-imgs/civic-inspo-3.png" alt="heavily filtered and blurred picture of a woman screaming">
+                    <div class="dark-background">
+                        <p><strong>Black Mirror (TV): </strong>
+                            As an anthology series, Black Mirror explores our relationship with technology in a dystopian context; a cautionary tale as to what might be in the future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="civic-final-project">
+            <div>
+                <div class="project-text-med">
+                    <h3>Final Project</h3>
+                    <p>To bring the world of C.I.V.I.C to life, I crafted a visual and interaction system rooted in cold functionality and dystopian aesthetics—where design reinforces the illusion of objectivity and control.</p>
+                </div>
+                <img src="imgs/civic-imgs/civic-art-direction.png" alt="color palette, typography and icons">
+                <p class="project-text-med">The interface leaned into a clinical, hyper-modern look—evoking the sterility of government systems with a subtle sense of unease. This is done through a monotone color palette and custom-made icons.</p>
+            </div>
+            <div class="side-by-side">
+                <img src="imgs/civic-imgs/civic-id.png" alt="screenshot of the id page of the civic app">
+                <img src="imgs/civic-imgs/civic-mockup-3.png" alt="3 phone mockups showing jazzdor's score pages">
+            </div>
+            <video autoplay muted loop playsinline>
+                    <source src="imgs/civic-imgs/civic-vid-1.mp4" type="video/mp4">
+            </video>
+            <div>
+                <h3>Key Features & UI Elements:</h3>
+                <div class="project-text-med">
+                    <h4>Movement Indicating Interaction</h4>
+                    <p>Animated buttons subtly shift and morph on hover, with continuous movement that invites users to interact.</p>
+                </div>
+                <div class="features">
+                    <div class="feature-row">
+                        <video autoplay muted loop playsinline>
+                                <source src="imgs/civic-imgs/civic-feature-1.mp4" type="video/mp4">
+                        </video>
+                        <div>
+                            <h4>Social Standing Score</h4>
+                            <p>A dominant score reflects the user’s societal “worth,” with the background color shifting based on status—red for low, yellow for neutral, and blue for high. This ambient cue reinforces hierarchy and subtly shapes user perception.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div>
+                            <h4>Skeuomorphic ID Card</h4>
+                            <p>A digital ID with realistic textures and lighting to evoke official credentials. The card subtly tilts with phone movement, enhancing tactility and reinforcing its perceived authority.
+                            </p>
+                        </div>
+                        <video autoplay muted loop playsinline>
+                                <source src="imgs/civic-imgs/civic-feature-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="feature-row">
+                        <video autoplay muted loop playsinline>
+                                <source src="imgs/civic-imgs/civic-feature-3.mp4" type="video/mp4">
+                        </video>
+                        <div>
+                            <h4>Score History Visualization</h4>
+                            <p>Users can view the fluctuations in their score over time via stark, linear graphs. They can track the changes and exact numbers through a slider. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-text-med">
+                    <h3>Video Pitch:</h3>
+                    <p>C.I.V.I.C. places itself in futuristic, but not-so-distant world. It has a highly technical style and edge.
+                    See the video pitch below:</p>
+                </div>
+                <iframe src="https://www.youtube.com/watch?v=vBp-7G3SJEI"></iframe>
+                <p class="project-text-med">C.I.V.I.C. is the premier way to authenticate your life. Check your Social Standing Score, what you can do, and get the latest updates right from the Department of Social Standing.
+                </p>
+            </div>
+        </section>
+
+        <section id="civic-reflection">
+            <h3>Reflection</h3>
+
+            <h4>Judge comments:</h4>
+            <div class="quote-box">
+                <blockquote>“ The visual design demonstrates a high level of polish and professionalism, with precise alignment, consistent spacing, and refined details that contribute to a visually compelling experience. .... Strong attention to accessibility; high contrast, clear text, and inclusive design practices are evident.”</blockquote>
+                <blockquote>“ Overall, you guys smashed it!! In terms of projects, I evaluated your team stood out significantly beyond the rest. In terms of your teams high-level of craft, to a hyper engaging video. ..... I think you made exactly what you needed to tell the story you wanted to convey.”</blockquote>
+                <p>From judges that work in EA, Samsung, Microsoft, etc.</p>
+            </div>
+
+            <h4>Key Takeaways:</h4>
+            <div class="side-by-side">
+                <div class="project-text-small">
+                    <h5>You can't solve something if you don't know what to solve</h5>
+                    <p>With so much room for creative freedom our team had a hard time figuring out what idea we really wanted to focus on. As a designer, I tend to get ahead of myself and look to visuals right away. But this project helped me realize that you need a base foundation to work upon before you can really start designing. </p>
+                </div>
+                <div class="project-text-small">
+                    <h5>Eat critique, drink critique, breathe critique</h5>
+                    <p>In this design sprint we had to go to multiple office hours and we had to ask for many many opinions in order to make sure we were on track. Additionally, we had to keep each other in check as a team of 3 as well. But at the end of the day, it was all the input we got that made our project the best it can be. </p>
+                </div>
+            </div>
+
+            <img src="imgs/civic-imgs/civic-award.png" alt="3 people holding up certificates">
+
+            <h4>What Next?</h4>
+            <p class="project-text-med">This project was made in the span of 10 days, with 2 and a half people on our team so as of now it does lack a good chunk of its features. But if I had the capacity to revisit C.I.V.I.C, I’d try to flesh out the app and all of its pages just a bit more. Additionally, one of our original concepts for this app was to include fake advertisements to go in a more ‘consumerist dystopia’ direction. I would also have loved to make more artifacts to make this world more believable, because who knows how close it actually is?</p>
+
+            <a class="non-button scroll-up" href="#jazzdor-hero-home"><p>You can always take another look... </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none"><path fill="#121214" d="M0 16.2v-5.4h5.4v5.4zM5.4 10.8V5.4h5.4v5.4zM16.2 5.4v5.4h5.4V5.4zM21.6 10.8v5.4H27v-5.4zM10.8 5.4V0h5.4v5.4z"/></svg></a>
+
+            <section id="other">
+            <h3>See Other Projects</h3>
+            <div class="project-card">
+                <a href="project-jazzdor.html" class="project-card-media" aria-label="project jazzdor link">
+                    <video autoplay muted loop playsinline>
+                        <source src="../imgs/home-imgs/jazzdor-cardbg.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card-media-tags">
+                        <p>Visual Design</p>
+                        <p>UI/UX Design</p>
+                        <p>Branding</p>
+                    </div>
+                    <div class="project-card-media-mockup">
+                        <img src="imgs/home-imgs/jazzdor-thumbnail-1500w.png" alt="desktop mockup of jazzdor home page">
+                    </div>
+                </a>
+                <div class="project-card-text">
+                    <div>
+                        <h3>JAZZDOR</h3>
+                        <h4 class="yarndings12">JAZZDOR</h4>
+                    </div>
+                    <p>GET LOUD: A bold microsite branding project celebrating the energy of Jazzdor’s  experimental sound—designed in 5 weeks with custom visuals and playful interactions.
+                    </p>
+                </div>
+            </div>
+            </section>
+
+            
+        </section>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <p>Living and working on the ancestral lands of the Səlilwətaɬ (Tsleil-Waututh), kʷikʷəƛ̓əm(Kwikwetlem), Stz’uminus, xʷməθkʷəy̓əm (Musqueam), Qayqayt, and S’ólh Téméxw (Stó:lō) Nations.</p>
+            <div>
+                <p>Den Kinanti © 2025</p>
+                <p>Made through mystical forces</p>               
+            </div>
+        </div>
+    
+        <div class="footer-links">
+            <a class="non-button" href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
+                <img src="imgs\icons\resume-icon.svg" alt="pixel icon of a document with a folded corner">
+            </a>
+            <a class="non-button" href="https://www.linkedin.com/in/den-kinanti-9b5741284/" aria-label="linkedin-link">
+                <img src="imgs\icons\linkedin-icon.svg" alt="pixel icon of the linkedin logo">
+            </a>
+            <a class="non-button" href="mailto:denishameutia@gmail.com" aria-label="email-link">
+                <img src="imgs\icons\email-icon.svg" alt="pixel icon of an envelope">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
