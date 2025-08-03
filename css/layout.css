@@ -34,6 +34,16 @@
         font-size: 3rem;
     }
 
+      /* --------------------------------------------------------------------------                                               
+ | |                                                  
+ | |__   ___  _ __ ___   ___   _ __   __ _  __ _  ___ 
+ | '_ \ / _ \| '_ ` _ \ / _ \ | '_ \ / _` |/ _` |/ _ \
+ | | | | (_) | | | | | |  __/ | |_) | (_| | (_| |  __/
+ |_| |_|\___/|_| |_| |_|\___| | .__/ \__,_|\__, |\___|
+                              | |           __/ |     
+                              |_|          |___/      
+----------------------------------------------------------------------------- */
+
     #hero-home, #jazzdor, #civic, #contact{
         max-width: 80rem;
         align-self: center;
@@ -149,6 +159,272 @@
         width: fit-content;
         font-size: 1.2rem;
     }
+
+
+    /*----------------------------------------------------
+        _                  _            
+        | |                | |           
+        | | __ _ __________| | ___  _ __ 
+    _   | |/ _` |_  /_  / _` |/ _ \| '__|
+    | |__| | (_| |/ / / / (_| | (_) | |   
+    \____/ \__,_/___/___\__,_|\___/|_|   
+    ------------------------------------------------  */
+
+
+    #jazzdor-summary, #jazzdor-process, #jazzdor-final-project, #jazzdor-reflection{
+        margin-left: 2rem;
+        max-width: 80rem;
+    }
+
+    #jazzdor-summary img, #jazzdor-process img, #jazzdor-final-project img, #jazzdor-reflection img,
+    #jazzdor-summary video, #jazzdor-process video, #jazzdor-final-project video, #jazzdor-reflection video{
+        object-fit: cover;
+        border-radius: 1rem;
+        border: 0.1rem solid var(--black);
+        border-radius: 1rem;
+
+        box-shadow: 0 0.3rem 0 0 var(--black);
+    }
+
+
+    /* HERO */
+
+    #jazzdor-hero{
+        display: flex;
+        position:relative;
+        height: 80vh;
+        margin-bottom: 5rem;
+    }
+
+
+
+    #jazzdor-hero .hero-mockup{
+        max-height: 45vh;
+        bottom: 10vh;
+    }
+
+    #jazzdor-hero .hero-mockup img{
+        position: relative;
+        z-index: 2;
+        max-width: 55vw;
+    }
+
+
+    #jazzdor-hero .hero-content{
+        max-width: 100%;
+        flex-direction: row;
+        padding: 2rem;
+        margin: 0 10rem;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+        bottom: -70vh;
+
+    }
+
+    #jazzdor-hero .hero-content h1{
+        font-size: 6rem;
+        letter-spacing: -0.7rem;
+    }
+
+    #jazzdor-hero .hero-button{
+        display: flex;
+        gap: 1rem;
+        width: fit-content;
+        padding: 1rem 1.5rem;
+
+
+    }
+
+    #jazzdor-hero .border{
+        top: 70vh;
+        object-fit: cover;
+    }
+
+    /* SUMMARY */
+
+    #jazzdor-summary h2{
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+
+    .summary-text{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        margin: 3rem 0;
+    }
+
+    .summary-item{
+        max-width: 25%;
+    }
+
+    #jazzdor-summary .side-by-side{
+        gap: 2rem;
+    }
+    #jazzdor-summary .side-by-side .project-text-small img{
+        width:100%;
+        margin-bottom: 2rem;
+    }
+
+    #jazzdor-summary .side-by-side img{
+        width:50%;
+        margin-bottom: 2rem;
+    }
+
+    /* PROCESS */
+
+    #jazzdor-process h4{
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+
+    .jazzdor-concept-development-media{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+
+        margin-bottom: 2rem;
+
+    }
+
+    #jazzdor-process .cd-media-row{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+    }
+
+    #jazzdor-process .cd-media-row img{
+        width: 50%;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    /* FINAL PROJECT */
+
+    #jazzdor-final-project img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #jazzdor-final-project h4{
+        font-size: 2rem;
+    }
+
+    #jazzdor-final-project .side-by-side{
+        gap: 2rem;
+        max-width: 100%;
+    }
+
+    #jazzdor-final-project .side-by-side img{
+        max-width: 48%;
+    }
+
+    #jazzdor-final-project video{
+        height: fit-content;
+        width: 100%;
+    }
+
+
+
+
+    /* REFLECTION */
+
+    #jazzdor-reflection img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #jazzdor-reflection .side-by-side{
+        gap: 2rem;
+    }
+
+    #jazzdor-reflection .side-by-side img{
+        max-width: 48%;
+    }
+
+    #jazzdor-reflection video{
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #jazzdor-reflection h5{
+        font-size: 1.5rem;
+    }
+
+
+    /* ------------------------------------------------------
+    _____   _______      _______   _____ 
+    / ____| |_   _\ \    / /_   _| / ____|
+    | |        | |  \ \  / /  | |  | |     
+    | |        | |   \ \/ /   | |  | |     
+    | |____ _ _| |_ _ \  /   _| |_ | |____ 
+    \_____(_)_____(_) \(_) |_____(_)_____|
+    ---------------------------------------------------------  */
+                                            
+
+
+
+    /* GENERAL */
+
+
+    .project-text-med{
+        max-width: 60rem;
+        margin: 3rem 0;
+    }
+
+
+    .project-text-small{
+        max-width: 40rem;
+        margin-bottom: 2rem 0;
+    }
+
+    .italic{
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    .side-by-side{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #other{
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
+        align-items: start;
+        justify-content: center;
+        scroll-margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    #other .project-card{
+        margin-top: 2rem;
+    }
+
+    #other .project-card-media-mockup{
+        bottom: 2.5rem;
+    }
+
+    #other .project-card-media-mockup picture {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #other .project-card-media img {
+        width: 52%;
+    }
+
+    #other .project-card-media video {
+        height: 60vh;
+    }
+
+
 
     /*----------------------------------------------------------------*/
 

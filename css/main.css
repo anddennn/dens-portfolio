@@ -17,6 +17,8 @@ body{
     background-size: 5rem;
     background-repeat: repeat;
     background-position: right top;
+
+    line-height: 1.5;
 }
 
 p, ol, ul, li{
@@ -32,17 +34,18 @@ a{
     border: 0.1rem solid var(--black);
     border-radius: 1rem;
     transition: all 200ms ease;
+    box-shadow: 0 0.3rem 0 0 var(--black);
 
     position: relative;
     top: 0;
 
-    box-shadow: 0 0.3rem 0 0 var(--black);
 }
 
-a:hover, a:focus{
+a:hover, a:focus, a:active{
     top: 0.3rem;
     box-shadow: 0 0 0 0 transparent;
 }
+
 
 .non-button{
     color: var(--black);
@@ -111,17 +114,28 @@ https://www.youtube.com/watch?v=m7YDWNz65iI */
     background-color: transparent;
     border: none;
     padding: 1rem;
+    top: 0;
     right: 0;
     
+    
     z-index: 1000;
+    transition: all 150ms ease;
 }
 
 #close-sidebar-button{
     display: block;
+    position: relative;
     background-color: transparent;
     border: none;
     padding: 1rem;
     margin-left: auto;
+    top: 0;
+    transition: all 150ms ease;
+}
+
+#close-sidebar-button:hover, #close-sidebar-button:focus, #close-sidebar-button:active,
+#open-sidebar-button:hover, #open-sidebar-button:focus, #open-sidebar-button:active{
+    top: 0.3rem;
 }
 
 #overlay{
@@ -143,6 +157,8 @@ nav{
     z-index: 1000;
     border-left: 0.1rem solid var(--black);
     border-bottom: none;
+
+    
     transition: all 150ms ease-out;
 }
 
@@ -189,9 +205,9 @@ nav li{
     margin: 0 1rem 0 0;
 }
 
-nav a:hover, nav a:focus{
-    color: #00FFFF;
-    fill: #00FFFF;
+nav a:hover, nav a:focus, nav a:active{
+    color: var(--red);
+    fill: var(--red);
 }
 
 nav a.active-link{
@@ -480,6 +496,28 @@ nav .home-li{
   \____/ \__,_/___/___\__,_|\___/|_|   
  ------------------------------------------------  */
 
+
+#jazzdor-summary, #jazzdor-process, #jazzdor-final-project, #jazzdor-reflection{
+    max-width: 100vw;
+    scroll-margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#jazzdor-summary img, #jazzdor-process img, #jazzdor-final-project img, #jazzdor-reflection img,
+#jazzdor-summary video, #jazzdor-process video, #jazzdor-final-project video, #jazzdor-reflection video{
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+
+    box-shadow: 0 0.3rem 0 0 var(--black);
+}
+
+
 /* HERO */
 
 #jazzdor-hero{
@@ -488,8 +526,7 @@ nav .home-li{
     position:relative;
 
     height: 80vh;
-    margin-bottom: 10rem;
-    
+    margin-bottom: 5rem;
 }
 
 #jazzdor-hero video{
@@ -501,13 +538,13 @@ nav .home-li{
     z-index: 0;
 }
 
-.jazzdor-hero-media{
+#jazzdor-hero .hero-media{
     align-items: center;
     justify-content: center;
     width:100%;
 }
 
-.jazzdor-hero-media::after{
+#jazzdor-hero .hero-media::after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -517,7 +554,7 @@ nav .home-li{
     background: linear-gradient(180deg, rgba(255, 250, 250, 0) 0%, rgba(255, 250, 250, 1) 100%);
 }
 
-.jazzdor-hero-mockup{
+#jazzdor-hero .hero-mockup{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,44 +566,118 @@ nav .home-li{
     bottom: 10vh;
 }
 
-.jazzdor-hero-mockup img{
+#jazzdor-hero .hero-mockup img{
     position: relative;
     z-index: 2;
     max-width: 75vw;
     justify-self: center;
 }
 
-.jazzdor-hero-content{
+#jazzdor-hero .hero-content{
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: end;
+    max-width: 100%;
+    gap: 0rem;
     bottom: -60vh;
     padding: 2rem;
 
+    z-index: 10;
+
 }
 
-.jazzdor-hero-content h1{
+#jazzdor-hero .hero-content h1{
     font-size: 4.5rem;
     letter-spacing: -0.6rem;
     z-index: 5;
 }
 
-.jazzdor-hero-button{
+#jazzdor-hero .hero-button{
     display: flex;
     gap: 1rem;
     width: fit-content;
     padding: 1rem 1.5rem;
 }
 
-.border{
+#jazzdor-hero .border{
     position:relative;
     top: 60vh;
-    width:100vw;
+    max-width:100vw;
     object-fit: cover;
     height: 2rem;
     z-index: 10;
+}
+
+/* SUMMARY */
+#jazzdor-summary h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.summary-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin: 2rem 0;
+}
+
+.summary-item{
+    max-width: 100%;
+}
+.summary-item h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#jazzdor-summary img{
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+/* PROCESS */
+
+#jazzdor-process img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.cd-media-row img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+/* FINAL PROJECT */
+
+#jazzdor-final-project img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#jazzdor-final-project video{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+/* REFLECTION */
+
+#jazzdor-reflection img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#jazzdor-reflection video{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#jazzdor-reflection h3, h4{
+    margin-bottom: 2rem;
 }
 
 /* ------------------------------------------------------
@@ -580,6 +691,67 @@ nav .home-li{
                                         
 
 
+
+/* GENERAL */
+
+
+.project-text-med{
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+
+.project-text-small{
+    max-width: 35rem;
+    margin-bottom: 2rem;
+}
+
+.italic{
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.side-by-side{
+    display: flex;
+    flex-direction: column;
+}
+
+#other{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+#other .project-card{
+    margin-top: 2rem;
+}
+
+
+#other .project-card-media-mockup{
+    bottom: 2.5rem;
+}
+
+#other .project-card-media-mockup picture {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#other .project-card-media img {
+    border: 0 transparent;
+
+    box-shadow: 0 0 0 0 transparent;
+    width: 52%;
+}
+
+#other .project-card-media video {
+    height: 60vh;
+}
 
 
 
@@ -682,6 +854,12 @@ footer{
         transition: all 150ms ease;
     }
 
+    nav a:hover, nav a:focus, nav a:active{
+        color: #00FFFF;
+        fill: #00FFFF;
+    }
+
+
     nav .title-li{
         color: var(--white);
     }
@@ -705,7 +883,7 @@ footer{
     }
 
     #main-content{
-        margin-left: 13rem;
+        margin-left: 15rem;
     }
 }
 
