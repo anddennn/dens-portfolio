@@ -23,7 +23,7 @@
     <!-- NAV BAR -->
 <!-- 
     for screen reader users to go to main content -->
-    <a href="#hero" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <button id="open-sidebar-button" onclick="openSideBar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="none"><path fill="snow" d="M1.653 1.653h27.693v27.693H1.653z"/><path fill="#000" d="M31 3.102h-1.557v24.795H31V3.102ZM29.442 27.896h-1.546v1.546h1.546v-1.546ZM29.442 1.546h-1.546v1.556h1.546V1.546ZM27.897 29.443H3.102v1.556h24.795v-1.556ZM24.795 20.147H6.204v1.546H4.647v3.102h1.557v-1.546h18.591v1.546h1.556v-3.102h-1.556v-1.546ZM24.795 12.398H6.204v1.545H4.647v3.102h1.557V15.5h18.591v1.546h1.556v-3.102h-1.556v-1.545ZM24.796 4.648H6.205v1.546H4.648v3.102h1.557V7.75h18.591v1.546h1.556V6.194h-1.556V4.648ZM24.796 24.795H6.204v1.546h18.592v-1.546Z"/><path fill="#000" d="M24.796 17.045H6.204v1.546h18.592v-1.546ZM24.796 9.295H6.204v1.556h18.592V9.296ZM27.897 0H3.102v1.546h24.795V0ZM3.103 27.896H1.557v1.546h1.546v-1.546ZM3.103 1.546H1.557v1.556h1.546V1.546ZM1.556 3.102H0v24.796h1.556V3.102Z"/></svg>
@@ -35,7 +35,7 @@
                 <button id="close-sidebar-button" onclick="closeSideBar()" aria-label="close sidebar"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" fill="none"><path fill="#000001" d="M31.24 3.05h-1.53v24.38h1.53V3.05ZM29.71 27.43h-1.52v1.52h1.52v-1.52ZM29.71 1.52h-1.52v1.53h1.52V1.52ZM28.19 28.95H3.81v1.53h24.38v-1.53ZM11.313 7.082 24.24 20.008l-1.074 1.075 1.082 1.081-2.157 2.157-1.082-1.082 1.075-1.075L9.157 9.238l-1.075 1.075L7 9.231l2.157-2.156 1.082 1.082 1.074-1.075Z"/><path fill="#000001" d="M20.008 7.082 7.082 20.008l1.075 1.075-1.082 1.081 2.156 2.157 1.082-1.082-1.074-1.075L22.164 9.238l1.075 1.075 1.082-1.082-2.157-2.156-1.081 1.082-1.075-1.075Z"/><path fill="#000001" d="M8.082 10.313 21.008 23.24l-1.075 1.075L7.007 11.388l1.075-1.075Z"/><path fill="#000001" d="M23.24 10.313 10.313 23.24l1.081 1.082 12.926-12.926-1.082-1.082ZM28.19 0H3.81v1.52h24.38V0ZM3.81 27.43H2.29v1.52h1.52v-1.52ZM3.81 1.52H2.29v1.53h1.52V1.52ZM2.29 3.05H.76v24.38h1.53V3.05Z"/><path fill="#000001" d="M9.405 9 22.5 22l-1.66 1.396L8 10.386 9.405 9Z"/><path fill="#000001" d="M8.953 21.977 21.961 8.97 23.5 10.5 10.601 23.625l-1.648-1.648Z"/></svg></button>
             </li>
             <li class="home-li">
-                <a href="index.html" aria-current="page" aria-label="home link">D.</a>
+                <a href="index.html" aria-current="page" aria-label="D. logo link">D.</a>
             </li> 
             <li class="title-li">Go Back</li>
             <li><a href="index.html">Home</a></li>
@@ -102,7 +102,7 @@
     </section>
     <!-- loader reference from: https://www.youtube.com/watch?v=gttmqvZ4kYc -->
     <div class="loader-wrapper">
-        <span class="loader"><img class="loader-inner" src="imgs/pixil-gif-drawing.gif"></span>
+        <span class="loader"><img class="loader-inner" src="imgs/pixil-gif-drawing.gif" aria-hidden="true"></span>
     </div>
     
     <footer>
@@ -117,13 +117,13 @@
     
         <div class="footer-links">
             <a class="non-button" href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">
-                <img src="imgs\icons\resume-icon.svg" alt="pixel icon of a document with a folded corner">
+                <img src="imgs/icons/resume-icon.svg" alt="pixel icon of a document with a folded corner">
             </a>
             <a class="non-button" href="https://www.linkedin.com/in/den-kinanti-9b5741284/" aria-label="linkedin-link">
-                <img src="imgs\icons\linkedin-icon.svg" alt="pixel icon of the linkedin logo">
+                <img src="imgs/icons/linkedin-icon.svg" alt="pixel icon of the linkedin logo">
             </a>
             <a class="non-button" href="mailto:denishameutia@gmail.com" aria-label="email-link">
-                <img src="imgs\icons\email-icon.svg" alt="pixel icon of an envelope">
+                <img src="imgs/icons/email-icon.svg" alt="pixel icon of an envelope">
             </a>
         </div>
     </footer>
