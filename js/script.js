@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.querySelector(".loader-wrapper");
+  loader.classList.remove("no-js");
+  loader.classList.add("js-enabled");
+});
+
 
 $(window).on("load",function(){
   $(".loader-wrapper").fadeOut("slow");
@@ -47,6 +53,8 @@ navLinks.forEach(link => {
         }
     });
 });
+
+
 
 updateNavbar(media)
 

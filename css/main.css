@@ -90,10 +90,14 @@ h4{
     top:0;
     left:0;
     background-color: var(--white);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 99999;
+}
+
+.loader-wrapper.js-enabled {
+    display: flex;
 }
 
 .loader{
@@ -170,6 +174,7 @@ https://www.youtube.com/watch?v=m7YDWNz65iI */
     z-index: 999;
     display:none;
 }
+
 
 
 nav{
@@ -255,6 +260,7 @@ nav .extra-li{
     margin-top: 2rem;
     border-top: 0.1rem solid var(--black);
 }
+
 
     
 #main-content{
@@ -1176,6 +1182,11 @@ footer{
     height: fit-content;
     cursor: grab;
     z-index: 1002; /* Make sure it's above other content */
+
+    position: absolute;
+    bottom: 0;
+    right:0;
+
 }
 #dog img {
     width: 20vw;
