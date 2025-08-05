@@ -1,3 +1,13 @@
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
+
+
+
+///////////////////////////////////////////////////
+
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 

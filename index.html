@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js" defer></script>
 </head>
 
 <body>
+    
 
     <div id="dog">
         <img src="imgs/pixil-gif-drawing.gif" alt="pixel art of a dog">
@@ -49,6 +53,7 @@
 
     <section id="main-content">
         <section id="hero-home">
+            <img class="note" src="imgs/home-imgs/note.png" alt="text that says you can grab the dog" aria-hidden="true">
             <div class="hero-content">
                 <div class="hero-text">
                     <p>Hey hey! My name is:</p>
@@ -136,6 +141,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none"><path fill="#121214" d="M0 16.2v-5.4h5.4v5.4zM5.4 10.8V5.4h5.4v5.4zM16.2 5.4v5.4h5.4V5.4zM21.6 10.8v5.4H27v-5.4zM10.8 5.4V0h5.4v5.4z"/></svg></a>
         </section>
     </section>
+
+    <!-- loader reference from: https://www.youtube.com/watch?v=gttmqvZ4kYc -->
+    <div class="loader-wrapper">
+        <span class="loader"><img class="loader-inner" src="imgs/pixil-gif-drawing.gif"></span>
+    </div>
     
     <footer>
         <div class="footer-text">
@@ -145,6 +155,7 @@
                 <p>Made through mystical forces</p>               
             </div>
         </div>
+        
     
         <div class="footer-links">
             <a class="non-button" href="https://drive.google.com/file/d/18HffHH8XvZwm0yqOqcYWuHMmJQuwC7IE/view?usp=sharing" aria-label="resume-link">

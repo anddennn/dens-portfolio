@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project - C.I.V.I.C</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js" defer></script>
 </head>
 
@@ -49,13 +53,13 @@
                 </div>
             </div>
             <div class="hero-content">
-                <a class="hero-button">
+                <a href="https://cloud.protopie.io/p/523ae5b685ef2965ea9b3ecb?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&bgImage=undefined&playSpeed=1"class="hero-button">
                     <p>Try the protoype</p>
                     <p class="yarndings12">\</p>
                 </a>
                 <h1>C.I.V.I.C</h1>
             </div>
-            <img class="border" src="imgs/civic-imgs/civic-border aria-hidden="true">
+            <img class="border" src="imgs/civic-imgs/civic-border.png" aria-hidden="true">
     </section>
 
     <section id="main-content">
@@ -64,7 +68,7 @@
                 <h2>“C.I.V.I.C” An award-winning Design Jam Project</h2>
                 <p>Over 10 days, our team developed C.I.V.I.C, a speculative design prototype that imagines a future where an individual’s social value is reduced to a single numerical score. As Lead UX/UI Designer, I was responsible for shaping the user experience and crafting the interface design to reflect the world’s cold, data-driven values which was then prototyped in ‘Protopie’.  </p>
             </div>
-            <p>TThe result was a concept that won the ProtoPie sponsorship award at  SparkJam 2025.</p>
+            <p class="italic">The result was a concept that won the ProtoPie sponsorship award at  SparkJam 2025.</p>
             <hr>
             <div class="summary-text">
                 <div class="summary-item">
@@ -84,11 +88,13 @@
                     <img src="imgs/civic-imgs/civic-mockup-1.png" alt="two phones showcasing the ID and verification page of civic">
                     <img src="imgs/civic-imgs/civic-mockup-2.png" alt="a hand holding a phone with the civic home page">
             </div>
-            <h3>The Context:</h3>
-            <p>
-                Set in 2035, C.I.V.I.C is a fictional government app used to verify one’s Social Standing Score, calculated from financial, social, and behavioral data. Citizens use this ID to pass checkpoints, apply for jobs, and even attend social events—illustrating how data-driven systems can reinforce inequality under the guise of objectivity.
-            </p>
-            <img src="imgs/civic-imgs/civic-banner.png" alt="abstract of the civic colors">
+            <div class="project-text-med">
+                <h3>The Context:</h3>
+                <p>
+                    Set in 2035, C.I.V.I.C is a fictional government app used to verify one’s Social Standing Score, calculated from financial, social, and behavioral data. Citizens use this ID to pass checkpoints, apply for jobs, and even attend social events—illustrating how data-driven systems can reinforce inequality under the guise of objectivity.
+                </p>
+            </div>
+            <img src="imgs/civic-imgs/civic-banner.png" alt="abstract of the red blue and yellow blurs">
         </section>
 
         <section id="civic-process">
@@ -116,7 +122,7 @@
             <div class="project-text-med">
                 <h3>Inspiration:</h3>
                 <p>
-                    As the visual designer, I translated speculative themes into a   cohesive aesthetic that reflected both contemporary UI patterns and dystopian overtones. For the design I took inspiration from various sources. 
+                    As the visual designer, I translated speculative themes into a cohesive aesthetic that reflected both contemporary UI patterns and dystopian overtones. For the design I took inspiration from various sources. 
                 </p>
             </div>
             <div class="cd-media">
@@ -132,7 +138,7 @@
                     <img src="imgs/civic-imgs/civic-inspo-1.png" alt="collection of social media and finance app mockups">
                 </div>
                 <div class="cd-media-row">
-                    <img src="imgs/civic-imgs/civic-inspo-3.png" alt="heavily filtered and blurred picture of a woman screaming">
+                    <img src="imgs/civic-imgs/civic-inspo-2.png" alt="heavily filtered and blurred picture of a woman screaming">
                     <div class="dark-background">
                         <p><strong>Black Mirror (TV): </strong>
                             As an anthology series, Black Mirror explores our relationship with technology in a dystopian context; a cautionary tale as to what might be in the future.
@@ -161,23 +167,19 @@
             </video>
             <div>
                 <h3>Key Features & UI Elements:</h3>
-                <div class="project-text-med">
-                    <h4>Movement Indicating Interaction</h4>
-                    <p>Animated buttons subtly shift and morph on hover, with continuous movement that invites users to interact.</p>
-                </div>
                 <div class="features">
                     <div class="feature-row">
-                        <video autoplay muted loop playsinline>
-                                <source src="imgs/civic-imgs/civic-feature-1.mp4" type="video/mp4">
-                        </video>
-                        <div>
+                        <div class="project-text-med">
                             <h4>Social Standing Score</h4>
                             <p>A dominant score reflects the user’s societal “worth,” with the background color shifting based on status—red for low, yellow for neutral, and blue for high. This ambient cue reinforces hierarchy and subtly shapes user perception.
                             </p>
                         </div>
+                        <video autoplay muted loop playsinline>
+                                <source src="imgs/civic-imgs/civic-feature-1.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="feature-row">
-                        <div>
+                        <div class="project-text-med">
                             <h4>Skeuomorphic ID Card</h4>
                             <p>A digital ID with realistic textures and lighting to evoke official credentials. The card subtly tilts with phone movement, enhancing tactility and reinforcing its perceived authority.
                             </p>
@@ -187,14 +189,14 @@
                         </video>
                     </div>
                     <div class="feature-row">
-                        <video autoplay muted loop playsinline>
-                                <source src="imgs/civic-imgs/civic-feature-3.mp4" type="video/mp4">
-                        </video>
-                        <div>
+                        <div class="project-text-med">
                             <h4>Score History Visualization</h4>
                             <p>Users can view the fluctuations in their score over time via stark, linear graphs. They can track the changes and exact numbers through a slider. 
                             </p>
                         </div>
+                        <video autoplay muted loop playsinline>
+                                <source src="imgs/civic-imgs/civic-feature-3.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
 
@@ -203,7 +205,9 @@
                     <p>C.I.V.I.C. places itself in futuristic, but not-so-distant world. It has a highly technical style and edge.
                     See the video pitch below:</p>
                 </div>
-                <iframe src="https://www.youtube.com/watch?v=vBp-7G3SJEI"></iframe>
+                    <!-- Direct copy paste from youtube embed feature -->
+                <iframe src="https://www.youtube.com/embed/vBp-7G3SJEI?si=XbyjaXFywbZZJp6D&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 <p class="project-text-med">C.I.V.I.C. is the premier way to authenticate your life. Check your Social Standing Score, what you can do, and get the latest updates right from the Department of Social Standing.
                 </p>
             </div>
@@ -269,6 +273,12 @@
             
         </section>
     </section>
+
+
+            <!-- loader reference from: https://www.youtube.com/watch?v=gttmqvZ4kYc -->
+    <div class="loader-wrapper">
+        <span class="loader"><img class="loader-inner" src="imgs/pixil-gif-drawing.gif"></span>
+    </div>
     <footer>
         <div class="footer-text">
             <p>Living and working on the ancestral lands of the Səlilwətaɬ (Tsleil-Waututh), kʷikʷəƛ̓əm(Kwikwetlem), Stz’uminus, xʷməθkʷəy̓əm (Musqueam), Qayqayt, and S’ólh Téméxw (Stó:lō) Nations.</p>

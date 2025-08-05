@@ -44,6 +44,12 @@
                               |_|          |___/      
 ----------------------------------------------------------------------------- */
 
+    .note{
+        display: block;
+        top: 70vh;
+        left: 80vw;
+    }
+
     #hero-home, #jazzdor, #civic, #contact{
         max-width: 80rem;
         align-self: center;
@@ -58,6 +64,7 @@
 
     .hero-text{
         max-width: 40rem;
+        top: 100rv;
     }
 
     .hero-text h1{
@@ -365,6 +372,238 @@
     ---------------------------------------------------------  */
                                             
 
+    #civic-summary, #civic-process, #civic-final-project, #civic-reflection{
+        margin-left: 2rem;
+        max-width: 80rem;
+    }
+
+    #civic-summary img, #civic-process img, #civic-final-project img, #civic-reflection img,
+    #civic-summary video, #civic-process video, #civic-final-project video, #civic-reflection video{
+        object-fit: cover;
+        border-radius: 1rem;
+        border: 0.1rem solid var(--black);
+        border-radius: 1rem;
+
+        box-shadow: 0 0.3rem 0 0 var(--black);
+    }
+
+
+    /* HERO */
+
+    #civic-hero{
+        display: flex;
+        position:relative;
+        height: 80vh;
+        margin-bottom: 5rem;
+    }
+
+
+
+    #civic-hero .hero-mockup{
+        max-height: 45vh;
+        bottom: 10vh;
+    }
+
+    #civic-hero .hero-mockup img{
+        position: relative;
+        z-index: 2;
+        max-width: 55vw;
+    }
+
+
+    #civic-hero .hero-content{
+        max-width: 100%;
+        flex-direction: row;
+        padding: 2rem;
+        margin: 0 10rem;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+        bottom: -70vh;
+
+    }
+
+    #civic-hero .hero-content h1{
+        font-size: 6rem;
+        letter-spacing: -0.7rem;
+    }
+
+    #civic-hero .hero-button{
+        display: flex;
+        gap: 1rem;
+        width: fit-content;
+        padding: 1rem 1.5rem;
+
+
+    }
+
+    #civic-hero .border{
+        top: 70vh;
+        object-fit: cover;
+    }
+
+    /* SUMMARY */
+
+    #civic-summary h2{
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+
+    .summary-text{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        margin: 3rem 0;
+    }
+
+    .summary-item{
+        max-width: 25%;
+    }
+
+    #civic-summary .side-by-side{
+        gap: 2rem;
+    }
+    #civic-summary .side-by-side .project-text-small img{
+        width:100%;
+        margin-bottom: 2rem;
+    }
+
+    #civic-summary .side-by-side img{
+        width:50%;
+        margin-bottom: 2rem;
+    }
+
+    /* PROCESS */
+
+    #civic-process h4{
+        font-size: 3.4rem;
+        line-height: 1.2;
+    }
+
+    #civic-process .side-by-side{
+        gap:2rem;
+        max-width: 100%;
+    }
+
+    #civic-process .side-by-side img{
+        max-width: 48.5%;
+    }
+
+
+    #civic-process .cd-media-row{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+        margin-bottom: 2rem;
+
+        width: 100%;
+        height: 50vh;
+    }
+
+    #civic-process .cd-media-row img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    #civic-process .dark-background{
+        width: fit-content;
+        height: 100%;
+    }
+
+    /* FINAL PROJECT */
+
+    #civic-final-project img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #civic-final-project h4{
+        font-size: 2rem;
+    }
+
+    #civic-final-project .side-by-side{
+        gap: 2rem;
+        width: 100%;
+    }
+
+    #civic-final-project .side-by-side img{
+        max-width: 50%;
+    }
+
+    #civic-final-project video{
+        height: fit-content;
+        width: 100%;
+    }
+
+    #civic-final-project .features{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #civic-final-project .feature-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #civic-final-project .feature-row video{ 
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+    #civic-final-project .feature-row .project-text-med{
+        padding: 2rem;
+        width: 100%;
+    }
+
+    #civic-final-project iframe{
+        width: 100%;
+        height: 80vh;
+    }
+
+
+
+
+
+    /* REFLECTION */
+    #civic-reflection .quote-box blockquote{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    #civic-reflection img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #civic-reflection .side-by-side{
+        gap: 2rem;
+    }
+
+    #civic-reflection .side-by-side img{
+        max-width: 48%;
+    }
+
+    #civic-reflection video{
+        height: 40vh;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #civic-reflection h5{
+        font-size: 1.5rem;
+    }
 
 
     /* GENERAL */

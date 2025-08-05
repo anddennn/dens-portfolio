@@ -83,6 +83,31 @@ h4{
 
 /*---------------------------------------------------------------*/
 
+.loader-wrapper{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.loader-inner{
+    display: inline-block;
+    width: 100%;
+}
+
 
 /* Nav bar reference in HTML, css and js is from this video:
 https://www.youtube.com/watch?v=m7YDWNz65iI */
@@ -245,6 +270,12 @@ nav .home-li{
 ----------------------------------------------------------------------------- */
 
 /* HERO SECTION */
+
+
+.note{
+    position:absolute;
+    display:none;
+}
 
 #hero-home{
     display: flex;
@@ -510,7 +541,6 @@ nav .home-li{
 #jazzdor-summary img, #jazzdor-process img, #jazzdor-final-project img, #jazzdor-reflection img,
 #jazzdor-summary video, #jazzdor-process video, #jazzdor-final-project video, #jazzdor-reflection video{
     object-fit: cover;
-    border-radius: 1rem;
     border: 0.1rem solid var(--black);
     border-radius: 1rem;
 
@@ -649,11 +679,16 @@ nav .home-li{
     margin-bottom: 3rem;
 }
 
-.cd-media-row img{
+#jazzdor-process .cd-media-row{
+    margin-bottom: 2rem;
+}
+
+#jazzdor-process .cd-media-row img{
     width: 100%;
     object-fit: cover;
     margin-bottom: 2rem;
 }
+
 
 /* FINAL PROJECT */
 
@@ -693,7 +728,251 @@ nav .home-li{
   \_____(_)_____(_) \(_) |_____(_)_____|
  ---------------------------------------------------------  */
                                         
+#civic-summary, #civic-process, #civic-final-project, #civic-reflection{
+    max-width: 100vw;
+    scroll-margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
 
+    align-items: center;
+    justify-content: center;
+}
+
+#civic-summary img, #civic-process img, #civic-final-project img, #civic-reflection img,
+#civic-summary video, #civic-process video, #civic-final-project video, #civic-reflection video{
+    object-fit: cover;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+
+    box-shadow: 0 0.3rem 0 0 var(--black);
+}
+
+
+/* HERO */
+
+#civic-hero{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+
+    height: 80vh;
+    margin-bottom: 5rem;
+}
+
+#civic-hero video{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+#civic-hero .hero-media{
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+#civic-hero .hero-media::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background: linear-gradient(180deg, rgba(255, 250, 250, 0) 0%, rgba(255, 250, 250, 1) 100%);
+}
+
+#civic-hero .hero-mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 100%;
+    max-height: 60vh;
+    z-index: 2;
+    bottom: 10vh;
+}
+
+#civic-hero .hero-mockup img{
+    position: relative;
+    z-index: 2;
+    max-width: 75vw;
+    justify-self: center;
+}
+
+#civic-hero .hero-content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    max-width: 100%;
+    gap: 0rem;
+    bottom: -60vh;
+    padding: 2rem;
+
+    z-index: 10;
+
+}
+
+#civic-hero .hero-content h1{
+    font-size: 4.5rem;
+    letter-spacing: -0.6rem;
+    z-index: 5;
+}
+
+#civic-hero .hero-button{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+}
+
+#civic-hero .border{
+    position:relative;
+    top: 60vh;
+    max-width:100vw;
+    object-fit: cover;
+    height: 2rem;
+    z-index: 10;
+}
+
+/* SUMMARY */
+#civic-summary h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.summary-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin: 2rem 0;
+}
+
+.summary-item{
+    max-width: 100%;
+}
+.summary-item h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#civic-summary img{
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+/* PROCESS */
+
+#civic-process img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+#civic-process h3{
+    margin-bottom: 3rem;
+}
+
+#civic-process .cd-media-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+
+#civic-process .cd-media-row img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#civic-process .dark-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* FINAL PROJECT */
+
+#civic-final-project .side-by-side{
+    width: 98%;
+    flex-direction: row;
+}
+
+#civic-final-project .side-by-side img{
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+#civic-final-project video{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#civic-final-project iframe{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    object-fit: cover;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+
+    box-shadow: 0 0.3rem 0 0 var(--black);
+}
+
+/* REFLECTION */
+
+#civic-reflection .quote-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0 0 var(--black);
+    margin-bottom: 2rem;
+}
+
+#civic-reflection .quote-box blockquote{
+    border-left: 0.3rem solid var(--black);
+    padding: 1rem;
+
+}
+
+#civic-reflection img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#civic-reflection video{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+#civic-reflection h3, h4{
+    margin-bottom: rem;
+}
 
 
 /* GENERAL */
