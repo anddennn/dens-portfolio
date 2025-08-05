@@ -663,6 +663,88 @@
         height: 60vh;
     }
 
+        /* 
+
+        _   _              _   
+        /_\ | |__  ___ _  _| |_ 
+       / _ \| '_ \/ _ \ || |  _|
+      /_/ \_\_.__/\___/\_,_|\__|
+                                */
+
+    /* HERO */
+    #about-hero, #about-background, #about-thesis{
+        margin-left: 2rem;
+        max-width: 80rem;
+    }
+
+
+    #about-hero{
+        border-bottom: 0.1rem solid var(--black);
+        padding: 2rem 0;
+    }
+
+    #about-hero img{
+        object-fit: cover;
+        border: 0.1rem solid var(--black);
+        border-radius: 1rem;
+
+        box-shadow: 0 0.3rem 0 0 var(--black);
+        margin: 2rem;
+        filter:grayscale(100);
+        transition: all 0.1s ease;
+    }
+
+    #about-hero img:hover{
+        filter:grayscale(0);
+    }
+
+
+    .about-hero-content{
+        max-width: 100%;
+    }
+
+
+    .about-hero-content h1{
+        font-size: 8.5rem;
+        margin: -1.2rem 0;
+        line-height: 1.1;
+    }
+
+    /* BACKGROUND */
+    #about-background h3{
+        margin-bottom: 1rem;
+    }
+
+    #about-background h4{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    #about-background .side-by-side{
+        margin-bottom: 2rem;
+        justify-content: space-between;
+    }
+
+    #about-background .side-by-side p{
+        max-width: 80%
+    }
+
+    .right{
+        text-align: right;
+    }
+
+
+
+    /* THESIS */
+
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border-top: 0.1rem solid var(--black);
+        padding: 2rem 0;
+    }
+
 
 
     /*----------------------------------------------------------------*/

@@ -251,6 +251,11 @@ nav .home-li{
     margin-right: unset;
 }
 
+nav .extra-li{
+    margin-top: 2rem;
+    border-top: 0.1rem solid var(--black);
+}
+
     
 #main-content{
     padding: 1.5rem;
@@ -1036,6 +1041,91 @@ nav .home-li{
     height: 60vh;
 }
 
+/* 
+
+    _   _              _   
+   /_\ | |__  ___ _  _| |_ 
+  / _ \| '_ \/ _ \ || |  _|
+ /_/ \_\_.__/\___/\_,_|\__|
+                            */
+
+/* HERO */
+
+#about-hero, #about-background, #about-thesis{
+    max-width: 100vw;
+    scroll-margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#about-hero{
+    border-bottom: 0.1rem solid var(--black);
+    padding: 2rem 0;
+}
+
+#about-hero img{
+    max-height: 50vh;
+    object-fit: cover;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+
+    box-shadow: 0 0.3rem 0 0 var(--black);
+    filter:grayscale(100);
+    transition: all 0.1s ease;
+}
+
+#about-hero img:hover{
+    filter:grayscale(0);
+}
+
+
+.about-hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    padding: 2rem 0;
+
+    max-width: 100%;
+}
+
+
+.about-hero-content h1{
+    font-size: 8.5rem;
+    margin: -1.2rem 0;
+    line-height: 1.1;
+}
+
+/* BACKGROUND */
+#about-background h3{
+    margin-bottom: 1rem;
+}
+
+#about-background h4{
+    margin-bottom: 0;
+}
+
+#about-background .side-by-side{
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+
+/* THESIS */
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 0.1rem solid var(--black);
+    padding: 2rem 0;
+}
+
+
 
 
 /*----------------------------------------------------------------*/
@@ -1153,6 +1243,10 @@ footer{
         font-size: 5rem;
 
         padding: 2rem 0;
+    }
+
+    nav .extra-li{
+        border-top: 0.1rem solid var(--white);
     }
 
 
