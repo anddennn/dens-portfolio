@@ -64,11 +64,11 @@
 
     .hero-text{
         max-width: 40rem;
-        top: 100rv;
+        top: 100vh;
     }
 
     .hero-text h1{
-        font-size: 14rem;
+        font-size: 12rem;
         margin: -1.5rem 0;
     }
 

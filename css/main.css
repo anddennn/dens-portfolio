@@ -1194,9 +1194,9 @@ footer{
     nav{
         position: fixed;
         top: 0;
-        height: 100vh;
+        height: 80vh;
         left: 0;
-        width: min(20rem, 100%);
+        width: min(15rem, 100%);
         z-index: 1000;
         transition: all 150ms ease-out;
 
@@ -1223,6 +1223,7 @@ footer{
         color: var(--white);
         padding: 1rem 1.5rem;
         background-color: transparent;
+        padding: 0.5rem 2rem;
 
         transition: all 150ms ease;
     }
