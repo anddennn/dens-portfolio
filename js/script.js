@@ -8,6 +8,7 @@ $(window).on("load",function(){
 
 ///////////////////////////////////////////////////
 
+
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 
@@ -51,10 +52,13 @@ updateNavbar(media)
 
 //////////////////////////////////////////////
 
+// Note that the draggable dog code was made with help from Visual Studio Code copilot
+// it was very hard to understand....
+
 const dog = document.getElementById('dog');
 const dogImg = dog.querySelector('img') || dog;
 
-let pos = { x: 100, y: window.innerHeight - 120 }; // 120 = approx dog height, adjust as needed
+let pos = { x: 100, y: window.innerHeight - 120 };
 let velocity = { x: 2, y: 0 };
 let isDragging = false;
 let dragStart = { x: 0, y: 0 };
